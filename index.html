@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup 2026 Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>World Cup 2026 🏆</h1>
+        
+        <button id="themeToggle" class="theme-btn">
+            <i class="fas fa-moon"></i> Chế độ tối
+        </button>
+
+        <p>Bắc Mỹ (Mỹ - Mexico - Canada)</p>
+        
+        <div class="countdown-container">
+            <h3>Đếm ngược đến trận khai mạc:</h3>
+            <div id="countdown" class="countdown">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filter-section">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Tìm kiếm tên đội tuyển (Ví dụ: Mỹ, Brazil...)...">
+            </div>
+            
+            <div class="filters">
+                <select id="roundFilter">
+                    <option value="all">Tất cả các vòng</option>
+                    <option value="Vòng bảng">Vòng đấu bảng</option>
+                </select>
+                
+                <input type="date" id="dateFilter" min="2026-06-12" max="2026-06-28">
+            </div>
+        </section>
+
+        <section id="match-container" class="match-container">
+            </section>
+    </main>
+
+    <div id="matchModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
