@@ -55,5 +55,21 @@
     </div>
 
     <script src="script.js"></script>
+<!-- Thêm đoạn này vào cuối file index.html, trước thẻ đóng </body> -->
+<div id="country-container">
+  <h3>Danh sách các đội tham dự</h3>
+  <!-- Ví dụ cho 2 quốc gia -->
+  <div class="country" onclick="showSquad('Brazil')">
+    <img src="brazil-flag.png" alt="Brazil">
+    <p>Brazil</p>
+  </div>
+  <div class="country" onclick="showSquad('France')">
+    <img src="france-flag.png" alt="France">
+    <p>France</p>
+  </div>
+</div>
+
+<!-- Nơi để hiển thị đội hình khi nhấn vào -->
+<div id="squad-display" style="margin-top: 20px; font-weight: bold;"></div>
 </body>
 </html>
